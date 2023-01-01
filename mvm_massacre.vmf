@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "9109"
-	"mapversion" "195"
+	"editorbuild" "9540"
+	"mapversion" "197"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "195"
+	"mapversion" "197"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -954,7 +954,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-1024 -112 -152"
+	"origin" "-988 -112 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -973,7 +973,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-988 -112 -152"
+	"origin" "-952 -112 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -992,7 +992,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-988 -16 -152"
+	"origin" "-952 -16 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1011,7 +1011,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-988 80 -152"
+	"origin" "-952 80 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1030,7 +1030,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-1024 80 -152"
+	"origin" "-988 80 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1049,7 +1049,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-1024 -16 -152"
+	"origin" "-988 -16 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1068,7 +1068,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-956 -112 -152"
+	"origin" "-920 -112 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1087,7 +1087,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-956 -16 -152"
+	"origin" "-920 -16 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1106,7 +1106,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-956 80 -152"
+	"origin" "-920 80 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1125,7 +1125,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-928 80 -152"
+	"origin" "-892 80 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1144,7 +1144,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-928 -16 -152"
+	"origin" "-892 -16 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1163,7 +1163,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "red_player_teamspawn"
 	"TeamNum" "2"
-	"origin" "-928 -112 -152"
+	"origin" "-892 -112 -152"
 	editor
 	{
 		"color" "220 30 220"
@@ -1204,8 +1204,8 @@ entity
 	"timer_length" "60000"
 	connections
 	{
-		"OnSetupFinished" "game_populator,Enable,,0,-1"
-		"OnSetupFinished" "game_timer,Disable,,1,-1"
+		"OnSetupFinished" "game_populatorEnable0-1"
+		"OnSetupFinished" "game_timerDisable1-1"
 	}
 	"origin" "-72 -152 -136"
 	editor
@@ -1222,6 +1222,7 @@ entity
 	"id" "26883"
 	"classname" "tf_gamerules"
 	"ctf_overtime" "1"
+	"ropes_holiday_lights_allowed" "1"
 	"targetname" "gamerules"
 	"origin" "-72 -120 -136"
 	editor
@@ -1318,10 +1319,10 @@ entity
 	"spawnflags" "1"
 	connections
 	{
-		"OnMapSpawn" "tonemap_global,SetAutoExposureMin,.7,0,-1"
-		"OnMapSpawn" "tonemap_global,SetAutoExposureMax,1.1,0,-1"
-		"OnMapSpawn" "tonemap_global,SetBloomScale,.3,0,-1"
-		"OnMapSpawn" "bombpath_choose_relay,Trigger,,0,-1"
+		"OnMapSpawn" "tonemap_globalSetAutoExposureMin.70-1"
+		"OnMapSpawn" "tonemap_globalSetAutoExposureMax1.10-1"
+		"OnMapSpawn" "tonemap_globalSetBloomScale.30-1"
+		"OnMapSpawn" "bombpath_choose_relayTrigger0-1"
 	}
 	"origin" "-72 -24 -136"
 	editor
@@ -1395,7 +1396,7 @@ entity
 	"targetname" "wave_start_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_arrows_clear_relay,Trigger,,0,-1"
+		"OnTrigger" "bombpath_arrows_clear_relayTrigger0-1"
 	}
 	"origin" "-72 88 -136"
 	editor
@@ -1417,7 +1418,7 @@ entity
 	"targetname" "wave_finished_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_choose_relay,Trigger,,5.1,-1"
+		"OnTrigger" "bombpath_choose_relayTrigger5.1-1"
 	}
 	"origin" "-72 88 -104"
 	editor
@@ -1439,11 +1440,11 @@ entity
 	"targetname" "bombpath_right_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_left_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_left_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_arrows_right,Enable,,0,-1"
-		"OnTrigger" "bombpath_center_nav_avoid,Enable,,0,-1"
+		"OnTrigger" "bombpath_left_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_left_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_arrows_rightEnable0-1"
+		"OnTrigger" "bombpath_center_nav_avoidEnable0-1"
 	}
 	"origin" "-72 136 -88"
 	editor
@@ -1465,11 +1466,11 @@ entity
 	"targetname" "bombpath_left_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_left_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_arrows_left,Enable,,0,-1"
-		"OnTrigger" "bombpath_center_nav_avoid,Enable,,0,-1"
+		"OnTrigger" "bombpath_left_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_arrows_leftEnable0-1"
+		"OnTrigger" "bombpath_center_nav_avoidEnable0-1"
 	}
 	"origin" "-72 168 -88"
 	editor
@@ -1489,13 +1490,13 @@ entity
 	"targetname" "bombpath_choose_1_case"
 	connections
 	{
-		"OnCase01" "bombpath_left_relay,Trigger,,0,-1"
-		"OnCase02" "bombpath_right_relay,Trigger,,0,-1"
-		"OnCase04" "bombpath_right_relay,Trigger,,0,-1"
-		"OnCase03" "bombpath_left_relay,Trigger,,0,-1"
-		"OnCase05" "bombpath_left_upper_relay,Trigger,,0,-1"
-		"OnCase06" "bombpath_right_upper_relay,Trigger,,0,-1"
-		"OnCase07" "bombpath_center_relay,Trigger,,0,-1"
+		"OnCase01" "bombpath_left_relayTrigger0-1"
+		"OnCase02" "bombpath_right_relayTrigger0-1"
+		"OnCase04" "bombpath_right_relayTrigger0-1"
+		"OnCase03" "bombpath_left_relayTrigger0-1"
+		"OnCase05" "bombpath_left_upper_relayTrigger0-1"
+		"OnCase06" "bombpath_right_upper_relayTrigger0-1"
+		"OnCase07" "bombpath_center_relayTrigger0-1"
 	}
 	"origin" "-72 152 -104"
 	editor
@@ -1517,11 +1518,11 @@ entity
 	"targetname" "bombpath_choose_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_choose_relay,Enable,,0.6,-1"
-		"OnTrigger" "bombpath_choose_1_case,PickRandom,,0.5,-1"
-		"OnTrigger" "bombpath_arrows_clear_relay,Trigger,,0.1,-1"
-		"OnTrigger" "bombpath_clearall_relay,Trigger,,0.1,-1"
-		"OnTrigger" "bombpath_choose_relay,Disable,,0,-1"
+		"OnTrigger" "bombpath_choose_relayEnable0.6-1"
+		"OnTrigger" "bombpath_choose_1_casePickRandom0.5-1"
+		"OnTrigger" "bombpath_arrows_clear_relayTrigger0.1-1"
+		"OnTrigger" "bombpath_clearall_relayTrigger0.1-1"
+		"OnTrigger" "bombpath_choose_relayDisable0-1"
 	}
 	"origin" "-72 136 -136"
 	editor
@@ -1543,11 +1544,11 @@ entity
 	"targetname" "bombpath_clearall_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_left_upper_nav_avoid,Disable,,0,-1"
-		"OnTrigger" "bombpath_left_nav_avoid,Disable,,0,-1"
-		"OnTrigger" "bombpath_right_nav_avoid,Disable,,0,-1"
-		"OnTrigger" "bombpath_right_upper_nav_avoid,Disable,,0,-1"
-		"OnTrigger" "bombpath_center_nav_avoid,Disable,,0,-1"
+		"OnTrigger" "bombpath_left_upper_nav_avoidDisable0-1"
+		"OnTrigger" "bombpath_left_nav_avoidDisable0-1"
+		"OnTrigger" "bombpath_right_nav_avoidDisable0-1"
+		"OnTrigger" "bombpath_right_upper_nav_avoidDisable0-1"
+		"OnTrigger" "bombpath_center_nav_avoidDisable0-1"
 	}
 	"origin" "-72 152 -136"
 	editor
@@ -1568,11 +1569,11 @@ entity
 	"targetname" "bombpath_arrows_clear_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_arrows_right,Disable,,0.1,-1"
-		"OnTrigger" "bombpath_arrows_left,Disable,,0.1,-1"
-		"OnTrigger" "bombpath_arrows_right_upper,Disable,,0.1,-1"
-		"OnTrigger" "bombpath_arrows_left_upper,Disable,,0.1,-1"
-		"OnTrigger" "bombpath_arrows_center,Disable,,0.1,-1"
+		"OnTrigger" "bombpath_arrows_rightDisable0.1-1"
+		"OnTrigger" "bombpath_arrows_leftDisable0.1-1"
+		"OnTrigger" "bombpath_arrows_right_upperDisable0.1-1"
+		"OnTrigger" "bombpath_arrows_left_upperDisable0.1-1"
+		"OnTrigger" "bombpath_arrows_centerDisable0.1-1"
 	}
 	"origin" "-72 168 -136"
 	editor
@@ -1692,16 +1693,16 @@ entity
 	"targetname" "cap_destroy_relay"
 	connections
 	{
-		"OnTrigger" "end_pit_destroy_particle,Start,,1,-1"
-		"OnTrigger" "pit_explosion_wav,PlaySound,,1,-1"
-		"OnTrigger" "cap_hatch_glasswindow,Break,,0,-1"
-		"OnTrigger" "cap_hatch_destroy_delete_prop,Kill,,1,-1"
-		"OnTrigger" "cap_hatch_destroy_animated_prop,Enable,,1,-1"
-		"OnTrigger" "cap_destroy_anim_gate_relay,Trigger,,1,-1"
-		"OnTrigger" "hatch_explo_kill_players,Enable,,1,-1"
-		"OnTrigger" "hatch_explo_kill_players,Disable,,1.5,-1"
-		"OnTrigger" "hatch_magnet_pit,Enable,,1,-1"
-		"OnTrigger" "trigger_hurt_hatch_fire,Enable,,1,-1"
+		"OnTrigger" "end_pit_destroy_particleStart1-1"
+		"OnTrigger" "pit_explosion_wavPlaySound1-1"
+		"OnTrigger" "cap_hatch_glasswindowBreak0-1"
+		"OnTrigger" "cap_hatch_destroy_delete_propKill1-1"
+		"OnTrigger" "cap_hatch_destroy_animated_propEnable1-1"
+		"OnTrigger" "cap_destroy_anim_gate_relayTrigger1-1"
+		"OnTrigger" "hatch_explo_kill_playersEnable1-1"
+		"OnTrigger" "hatch_explo_kill_playersDisable1.5-1"
+		"OnTrigger" "hatch_magnet_pitEnable1-1"
+		"OnTrigger" "trigger_hurt_hatch_fireEnable1-1"
 	}
 	"origin" "1664 0 -124"
 	editor
@@ -1722,17 +1723,17 @@ entity
 	"targetname" "boss_deploy_relay"
 	connections
 	{
-		"OnTrigger" "bots_win,RoundWin,,0,-1"
-		"OnTrigger" "hatch_explo_kill_players,Disable,,0.5,-1"
-		"OnTrigger" "hatch_magnet_pit,Enable,,0,-1"
-		"OnTrigger" "hatch_explo_kill_players,Enable,,0,-1"
-		"OnTrigger" "cap_destroy_anim_gate_relay,Trigger,,0,-1"
-		"OnTrigger" "cap_hatch_destroy_animated_prop,Enable,,0,-1"
-		"OnTrigger" "cap_hatch_destroy_delete_prop,Kill,,0,-1"
-		"OnTrigger" "pit_explosion_wav,PlaySound,,0,-1"
-		"OnTrigger" "end_pit_destroy_particle,Start,,0,-1"
-		"OnTrigger" "cap_hatch_glasswindow,Break,,0,-1"
-		"OnTrigger" "trigger_hurt_hatch_fire,Enable,,0,-1"
+		"OnTrigger" "bots_winRoundWin0-1"
+		"OnTrigger" "hatch_explo_kill_playersDisable0.5-1"
+		"OnTrigger" "hatch_magnet_pitEnable0-1"
+		"OnTrigger" "hatch_explo_kill_playersEnable0-1"
+		"OnTrigger" "cap_destroy_anim_gate_relayTrigger0-1"
+		"OnTrigger" "cap_hatch_destroy_animated_propEnable0-1"
+		"OnTrigger" "cap_hatch_destroy_delete_propKill0-1"
+		"OnTrigger" "pit_explosion_wavPlaySound0-1"
+		"OnTrigger" "end_pit_destroy_particleStart0-1"
+		"OnTrigger" "cap_hatch_glasswindowBreak0-1"
+		"OnTrigger" "trigger_hurt_hatch_fireEnable0-1"
 	}
 	"origin" "1624 0 -124"
 	editor
@@ -1757,8 +1758,8 @@ entity
 	"TeamNum" "3"
 	connections
 	{
-		"OnCapture" "bots_win,RoundWin,,0,-1"
-		"OnCapture" "cap_destroy_relay,Trigger,,0,-1"
+		"OnCapture" "bots_winRoundWin0-1"
+		"OnCapture" "cap_destroy_relayTrigger0-1"
 	}
 	solid
 	{
@@ -1970,12 +1971,12 @@ entity
 	"targetname" "cap_destroy_case"
 	connections
 	{
-		"OnCase01" "cap_hatch_destroy_animated_prop,SetAnimation,twobridges1,0,-1"
-		"OnCase01" "tankboss,DestroyIfAtCapturePoint,1,0,-1"
-		"OnCase02" "tankboss,DestroyIfAtCapturePoint,2,0,-1"
-		"OnCase02" "cap_hatch_destroy_animated_prop,SetAnimation,twobridges2,0,-1"
-		"OnCase03" "cap_hatch_destroy_animated_prop,SetAnimation,twobridges3,0,-1"
-		"OnCase03" "tankboss,DestroyIfAtCapturePoint,3,0,-1"
+		"OnCase01" "cap_hatch_destroy_animated_propSetAnimationtwobridges10-1"
+		"OnCase01" "tankbossDestroyIfAtCapturePoint10-1"
+		"OnCase02" "tankbossDestroyIfAtCapturePoint20-1"
+		"OnCase02" "cap_hatch_destroy_animated_propSetAnimationtwobridges20-1"
+		"OnCase03" "cap_hatch_destroy_animated_propSetAnimationtwobridges30-1"
+		"OnCase03" "tankbossDestroyIfAtCapturePoint30-1"
 	}
 	"origin" "1624 0 -168"
 	editor
@@ -2043,7 +2044,7 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouch" "!activator,SetHealth,-1000,0,-1"
+		"OnStartTouch" "!activatorSetHealth-10000-1"
 	}
 	solid
 	{
@@ -2437,11 +2438,11 @@ entity
 	"targetname" "bombpath_left_upper_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_left_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_arrows_left_upper,Enable,,0,-1"
-		"OnTrigger" "bombpath_center_nav_avoid,Enable,,0,-1"
+		"OnTrigger" "bombpath_left_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_arrows_left_upperEnable0-1"
+		"OnTrigger" "bombpath_center_nav_avoidEnable0-1"
 	}
 	"origin" "-72 184 -88"
 	editor
@@ -2463,11 +2464,11 @@ entity
 	"targetname" "bombpath_right_upper_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_left_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_left_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_arrows_right_upper,Enable,,0,-1"
-		"OnTrigger" "bombpath_center_nav_avoid,Enable,,0,-1"
+		"OnTrigger" "bombpath_left_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_left_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_arrows_right_upperEnable0-1"
+		"OnTrigger" "bombpath_center_nav_avoidEnable0-1"
 	}
 	"origin" "-72 120 -88"
 	editor
@@ -2631,11 +2632,11 @@ entity
 	"targetname" "bombpath_center_relay"
 	connections
 	{
-		"OnTrigger" "bombpath_left_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_left_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_upper_nav_avoid,Enable,,0,-1"
-		"OnTrigger" "bombpath_arrows_center,Enable,,0,-1"
-		"OnTrigger" "bombpath_right_nav_avoid,Enable,,0,-1"
+		"OnTrigger" "bombpath_left_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_left_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_right_upper_nav_avoidEnable0-1"
+		"OnTrigger" "bombpath_arrows_centerEnable0-1"
+		"OnTrigger" "bombpath_right_nav_avoidEnable0-1"
 	}
 	"origin" "-72 152 -88"
 	editor
@@ -2656,7 +2657,7 @@ entity
 	"targetname" "cap_destroy_anim_gate_relay"
 	connections
 	{
-		"OnTrigger" "cap_destroy_case,PickRandom,,0,1"
+		"OnTrigger" "cap_destroy_casePickRandom01"
 	}
 	"origin" "1640 32 -127"
 	editor
