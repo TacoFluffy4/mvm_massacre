@@ -19,4 +19,6 @@ This should have put a file in `C:\Program Files (x86)\Steam\steamapps\common\Te
 1. Kill the robots, pyro or engie is recommended.
 1. Use `+attack` so you can idle.
 
+The Metal Massacre achievement will still take a while as the requirement for it is absurd.
+
 The Normal mission is for Metal Massacre and T1 is for T-1000000.
