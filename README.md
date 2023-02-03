@@ -14,8 +14,8 @@ This should have put a file in `C:\Program Files (x86)\Steam\steamapps\common\Te
 1. Launch tf2.
 1. In the console type `map mvm_massacre` to join the map.
 1. In the console type `tf_mvm_min_players_to_start 1`
-1. You may have to call a vote to change the mission to either Massacre or T1 depending on which achievement you are going for.
+1. You may have to call a vote to change the mission depending on which achievement you are going for.
 1. Kill the robots, pyro or engie is recommended.
 1. Use `+attack` so you can idle.
 
-The Massacre mission is for Metal Massacre and T1 is for T-1000000.
+The Normal mission is for Metal Massacre and T1 is for T-1000000.
