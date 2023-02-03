@@ -2,7 +2,7 @@
 A map to help get the Metal Massacre and T-1000000 achievements in TF2.
 
 # How to install
-Download the [release zip](https://github.com/TacoFluffy4/mvm_massacre/releases/tag/release) file from the right side of the github page. 
+Download the [release zip](https://github.com/TacoFluffy4/mvm_massacre/releases/tag/v1.2) file from the right side of the github page. 
 
 You want to download and extract the map_files.zip folder.
 
