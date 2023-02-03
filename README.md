@@ -6,9 +6,9 @@ Download the [release zip](https://github.com/TacoFluffy4/mvm_massacre/releases/
 
 You want to download and extract the map_files.zip folder.
 
-You will then want to copy the `tf` folder that you extracted into the tf2 instilation directory (default locaiton is `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2`). There should already be a folder named tf there, and dragging this over should merge the two folders.
+You will then want to copy the `tf` folder that you extracted into the tf2 instilation directory (default locaiton is `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2`). There should already be a folder named "tf" there, and dragging this over should merge the two folders.
 
-This should have put a file in `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\maps` called `mvm_massacre.bsp` and `mvm_massacre.nav` aswell as two .pop files in the `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\maps` folder.
+This should have put a file in `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\maps` called `mvm_massacre.bsp` and `mvm_massacre.nav` aswell as two .pop files in the `C:\Program Files (x86)\Steam\steamapps\common\Team Fortress 2\tf\scripts\population` folder.
 
 # How to use
 1. Launch tf2.
